@@ -1,0 +1,250 @@
+class(my_data)
+cnames <- ("patient","age","weight","bp","rating","test")
+cnames <- c("patient","age","weight","bp","rating","test")
+colnames(my_data) <- cnames
+my_data
+plot(5,3)
+swirl()
+TRUE == TRUE
+(FALSE == TRUE) == FALSE
+6 ==7
+6 < 7
+10 <=10
+5 != 7
+!(5==7)
+FALSE & FALSE
+TRUE & c(TRUE, FALSE,FALSE)
+TRUE && c(TRUE, FALSE,FALSE)
+TRUE | c(TRUE, FALSE, FALSE)
+TRUE || c(TRUE, FALSE, FALSE)
+5>8 || 6 != 8 && 4 > 3.9
+isTRUE (6>4)
+identical('twins', 'twins')
+xor(5 == 6, !FALSE)
+ints <- sample(10)
+ints
+ints > 5
+which(ints>7)
+any(ints < 0)
+all(ints > 0)
+Sys.Date()
+mean(c(2,4,5))
+submit()
+boring_function("My first function")
+boring_function("My first function!")
+boring_function
+submit
+submit()
+my_mean(c(4,5,10))
+submit()
+remainder(5)
+remainder(11,5)
+remainder(divisor = 11, num = 5)
+remainder (4, div=2)
+args(remainder)
+submit
+submit()
+evaluate(sd, c(1.4,3.6,7.9,8.8))
+evaluate(function(x){x+1}, 6)
+evaluate (function(x){ x[1]}, c(8,4,0))
+evaluate (function(x){ x[3]}, c(8,4,0))
+evaluate (function(x){ x[length(x)]}, c(8,4,0))
+?paste
+paste("Programming","is","fun!")
+submit()
+telegram("This is silly")
+submit()
+mad_lib("duvall","purple","car")
+mad_libs("duvall","purple","car")
+submit
+submit()
+"I" %p% "love" %p% "R!"
+d1<-Sys.Date()
+class(d1)
+unclass(d1)
+dl
+d1
+d2<-as.Date("1969-01-01")
+unclass(d2)
+t1<-Sys.time()
+t1
+class(t1)
+unclass(t1)
+as.POSIXlt(Sys.time())
+t2<-as.POSIXlt(Sys.time())
+class(t2)
+t2
+unclass(t2)
+str(unclass(t2))
+t2$min
+weekdays(t1)
+weekdays(d1)
+weekdays(t1)
+months(t1)
+quarters(t2)
+t3<-"Octover 17, 1986"
+t3<-"October 17, 1986"
+t3<-"October 17, 1986 08:24"
+strptime(t3, "%B %d, %Y %H:%M")
+t4<-strptime(t3, "%B %d, %Y %H:%M")
+t4
+closs(t4)
+class(t4)
+Sys.time()> t1
+Sys.time() - t1
+difftime(Sys.time(), t1, units = 'days')
+x<-1:10
+if(x>5){x<-0}
+?sapply()
+x<-rnorm(100,2,4)
+summary(x)
+str(x)
+str(str)
+str(lm)
+lm
+str(lm)
+str(dir)
+x<-rnorm(100,2,4)
+summary(x)
+str(x)
+library(airquality)
+library(datasets)
+str(airquality)
+s <- split(airquality, airquality$month)
+M
+s <- split(airquality, airquality$Month)
+str(s)
+summary(s)
+str(s)
+pnorm(x)
+plot(pnorm(x))
+plot(rnorm(x))
+plot(dnorm(x))
+plot(x)
+plot(rnorm(10,20,2))
+set.seed(10)
+rnorm(5)
+set.seed(1)
+rnorm(5)
+plot(x)
+system.time()
+system.time(plot(x))
+system.time(mean(x))
+system.time(plot(x))
+Rprof(plot(x))
+RprofSummary
+RprofSummary()
+Rprof()
+summaryRprof(Rprof(plot(x)))
+set.seed(1)
+rpois(5,2)
+?rnorm
+set.seed(10)
+x<-rep(0:1, each = 5)
+e <- rnorm(10,0,20)
+y<-0.5+2*x+e
+y
+rbinom(x, 20. .5)
+rbinom(x, 20, .5)
+plot(rbinom(x, 20, .5))
+y<- matrix(1:100,10,10)
+y
+x <- solve(y)
+solve(y)
+?solve
+solve(y, a)
+solve(y, 2)
+b <- matrix(rnorm(1:10), 10,10)
+solve(x,b)
+b
+solve(y,b)
+library(swirl)
+swirl()
+ls()
+class(plants)
+dim(plants)
+nrow(plants)
+ncol(plants)
+object.size(plants)
+names(plants)
+head()
+head(plants)
+head(plants, 10)
+tail(plants, 15)
+summary(plants)
+table(plants$Active_Growth_Period)
+str(plants)
+?sample
+sample(1:6, 4, replace = TRUE)
+sample(1:6, 4, replace = TRUE)
+sample(1:20,10)
+LETTERS
+sample(LETTERS)
+sample(c(0,1), 100, replace=TRUE, prob(c(0.3,0.7)))
+sample(0;1, 100, replace=TRUE, prob(c(0.3,0.7)))
+sample(0:1, 100, replace=TRUE, prob(c(0.3,0.7)))
+sample(c(0,1), 100, replace=TRUE, prob=(c(0.3,0.7)))
+flips<-sample(c(0,1), 100, replace=TRUE, prob=(c(0.3,0.7)))
+flips <- sample(c(0,1), 100, replace=TRUE, prob=(c(0.3,0.7)))
+flips <- sample(c(0,1), 100, replace = TRUE, prob = c(0.3,0.7))
+flps
+flips
+sum(flips)
+?rbinom
+rbinom(1, size = 100, prob =0.7)
+flips2 <- rbinom(1, size = 100, prob =0.7)
+flips2 <- rbinom(100, size = 1, prob =0.7)
+flips2
+sum(flips2)
+?rnorm
+rnorm(1)
+rnorm(10)
+rnorm(10, mean =100, sd=25)
+rpois(5, mean=10)
+rpois(5, 10)
+replicate(100, rpois(5,10))
+my_pois <- replicate(100, rpois(5,10))
+my_pois
+cm <- colMeans(my_pois)
+hist(cm)
+data(cars)
+?cars
+head(cars)
+plot(cars)
+?plot
+plot(x=cars$speed, y=cars$dist)
+plot (x =cars$dist, y = cars$speed)
+plot(x=cars$speed, y=cars$dist, xlab ="Speed")
+plot(x=cars$speed, y=cars$dist, ylab ="Stopping Distance")
+plot(x=cars$speed, y=cars$dist, ylab ="Stopping Distance", xlab = "Speed")
+plot(cars, main="My Plot")
+plot(cars, sub="My Plot Subtitle")
+parpar
+?par
+plot(cars, col = 2)
+plot (cars, xlim =c(10,15))
+plot(cars, pch = 2)
+load(mtcars)
+data(mtcars)
+?boxplot
+boxplot(data= mtcars, formula = mpg ~ cyl)
+boxplot(data= mtcars, formula = "mpg ~ cyl")
+boxplot(formula = mpg ~ cyl, data=mtcars)
+hist(mtcars$mpg)
+dir()
+outcome<-read.csv("outcome-of-care-measures.csv", colClasses = ""character")
+outcome<-read.csv("outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+str(outcome)
+summary (outcome)
+ncols(outcome)
+ncol(outcome)
+names(outcomes)
+names(outcome)
+c<-as.numeric(outcome[,11])
+hist(c[,11])
+outcome[,11]<- as.numeric(outcome[,11])
+hist(outcome[,11])
+names(outcome)
+?which.min
+?min
