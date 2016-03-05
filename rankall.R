@@ -48,12 +48,14 @@ rankall <- function (outcome, num = "best"){
             rownum <- nrow(SortedDataForState)
         }
     
-        
+       ## Add the Hospital to the temp variable 'x' and then add the Hospital Name / State pair to the list of states (listOfStates)
         x<- SortedDataForState[as.integer(rownum), "Hospital.Name"]
         listOfStates<- rbind(listOfStates, c(x, nextState))
 }
-        
+        ## Give the list colum names
         colnames(listOfStates) <- c("hospital","state")
+       
+        ## convert to a data.frame and return the listOfStates
         return(data.frame(listOfStates))
         
                  
